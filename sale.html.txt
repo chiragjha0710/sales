@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OneInsure - Compare & Choose Insurance</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7faff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #0052cc, #007bff);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .logo {
+      width: 180px;
+      display: block;
+      margin: 0 auto 20px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .cta-button {
+      background-color: #ff5a1f;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+    nav {
+      background-color: white;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      text-decoration: none;
+      color: #007bff;
+      font-weight: 500;
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    form input, form button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background-color: #0052cc;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .card-grid {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      flex: 1;
+      min-width: 250px;
+      background: white;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+    .card h3 {
+      margin-top: 10px;
+      color: #0052cc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://www.oneinsure.com/oneinsurewebv1/assets/images/India_ki_insurance_help_line.svg" alt="OneInsure Logo" class="logo">
+    <h1 style="color: white;">Compare, Customize & Choose the Best Insurance Plan</h1>
+    <p style="color: white;">Your one-stop platform to explore health, life, car, and term plans from top insurers.</p>
+    <a href="#quote" class="cta-button">Start Comparing</a>
+  </header>
+
+  <nav>
+    <a href="#health">Health Insurance</a>
+    <a href="#life">Life Insurance</a>
+    <a href="#car">Car Insurance</a>
+    <a href="#term">Term Plan</a>
+    <a href="#products">Insurance Products</a>
+    <a href="#renew">Renew Your Policy</a>
+    <a href="#claim">Claim</a>
+    <a href="#support">Support</a>
+    <a href="#expert">Talk to Expert</a>
+    <a href="#signin">Sign In</a>
+  </nav>
+
+  <section id="quote">
+    <h2>Get Instant Quotes</h2>
+    <p>Enter your details to receive customized quotes instantly.</p>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <input type="text" placeholder="City" required>
+      <button type="submit">View My Quotes</button>
+    </form>
+  </section>
+
+  <section id="health">
+    <h2>Health Insurance Plans</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1030/1030883.png" alt="Health Icon" width="60">
+        <h3>Family Health Plans</h3>
+        <p>Affordable plans for the whole family with no room rent limits.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2482/2482634.png" alt="Individual Icon" width="60">
+        <h3>Individual Plans</h3>
+        <p>Customized personal coverage starting as low as ₹300/month.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="term">
+    <h2>Term Life Insurance</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Term Icon" width="60">
+        <h3>High Coverage Plans</h3>
+        <p>Cover up to ₹1 crore with premiums starting ₹500/month.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1632/1632670.png" alt="Add-on Icon" width="60">
+        <h3>Add Riders</h3>
+        <p>Add critical illness or accidental death benefit for complete protection.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="car">
+    <h2>Car Insurance Options</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/743/743007.png" alt="Car Icon" width="60">
+        <h3>Comprehensive Cover</h3>
+        <p>Protection against theft, damage, fire and third-party liability.</p>
+      </div>
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/971/971607.png" alt="Third Party" width="60">
+        <h3>Third-Party Only</h3>
+        <p>Meets legal requirement. Ideal for older cars or minimal usage.</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="background-color: #f0f8ff; padding: 50px 20px; text-align: center;">
+  <h2 style="font-size: 28px; margin-bottom: 20px;">Trusted by Thousands Across India 🇮🇳</h2>
+  <p style="max-width: 700px; margin: 0 auto 30px; font-size: 18px; color: #444;">
+    Every minute, a new family secures their future with OneInsure. Here's why Indians trust us:
+  </p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; max-width: 900px; margin: auto;">
+    <div style="flex: 1 1 200px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px;">
+      <h3>✅ IRDAI-Approved Insurers</h3>
+      <p>Only government-authorized and verified partners.</p>
+    </div>
+    <div style="flex: 1 1 200px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px;">
+      <h3>🔒 100% Paperless</h3>
+      <p>Secure and easy digital documentation with encryption.</p>
+    </div>
+    <div style="flex: 1 1 200px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px;">
+      <h3>💬 24x7 Human Support</h3>
+      <p>Real advisors, not bots. WhatsApp & Call support any time.</p>
+    </div>
+    <div style="flex: 1 1 200px; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); padding: 20px;">
+      <h3>💡 No Hidden Fees</h3>
+      <p>Transparent pricing with full disclosure. Always.</p>
+    </div>
+  </div>
+  <blockquote style="margin-top: 40px; font-style: italic; color: #007bff;">
+    “I had no clue where to start. OneInsure made everything simple, fast, and real.”<br><strong>– Priya D., Mumbai</strong>
+  </blockquote>
+</section>
+</body>
+</html>
